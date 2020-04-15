@@ -12,6 +12,24 @@
 
 This WAV file is similar to any other WAV file and can be played thorugh any media player that supports .wav format, but since the data in this .wav file would be the file hidden in it, the .wav file may produce unplesent noise.
 
+<table>
+  <tr>
+    <th colspan="2" align="center">Demo</th>
+  </tr>
+  <tr>
+    <th>Input</th>
+    <td><a href="https://github.com/ashwek/Hide_n_Seek/blob/master/sample_data/sample_pdf_file.pdf">sample_data / sample_pdf_file.pdf</a></td>
+  </tr>
+  <tr>
+    <th>Output</th>
+    <td><a href="https://github.com/ashwek/Hide_n_Seek/blob/master/Audio/demo/Wed%20Apr%2015%2016:43:23%202020.wav">demo / Wed Apr 15 16:43:23 2020.wav</a></td>
+  </tr>
+  <tr>
+    <th>Output wav file - wave diagram</th>
+    <td><img src="https://raw.githubusercontent.com/ashwek/Hide_n_Seek/master/Audio/demo/Wed%20Apr%2015%2016%3A43%3A23%202020%20-%20Wave%20diagram.png" height="100" /></td>
+  </tr>
+</table>
+  
 
 ----
 
@@ -22,6 +40,23 @@ This WAV file is similar to any other WAV file and can be played thorugh any med
 
 [Wav.cpp](https://github.com/ashwek/Hide_n_Seek/blob/master/Audio/Wav.cpp) takes a key _(string)_ and a .wav file as input. The sampling rate, number of channels, & bits per channel is read from the .wav file. **Key** is used to seed random generator. If the correct key is used, the random sequence generated during the **Hide** process is generated again, & by reapplying the XOR function, the cipher is removed. The orignal (hidden) file is recovered.
 
+<table>
+  <tr>
+    <th colspan="2" align="center">Demo</th>
+  </tr>
+  <tr>
+    <th>Input</th>
+    <td><a href="https://github.com/ashwek/Hide_n_Seek/blob/master/Audio/demo/Wed%20Apr%2015%2016:43:23%202020.wav">demo / Wed Apr 15 16:43:23 2020.wav</a></td>
+  </tr>
+  <tr>
+    <th>Output<br />Correct Key</th>
+    <td><a href="https://github.com/ashwek/Hide_n_Seek/blob/master/Audio/demo/sample_pdf_file.pdf">demo / sample_pdf_file.pdf</a></td>
+  </tr>
+  <tr>
+    <th>Output<br />Incorrect Key</th>
+    <td><a href="https://github.com/ashwek/Hide_n_Seek/blob/master/Audio/demo/invalid%20file">demo / invalid file</a></td>
+  </tr>
+</table>
 
 ----
 
